@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="busqueda">
+            <div class="perfil" id="perfil">
+                <img src="Pokemon-logo.jpg" alt="logo pokemon">
+            </div>
+            <div class="info">
+                <div class="barra-info">
+                    <label for="opciones" class="etiqueta"><h3>Selecciona una forma de buscar Pokemones <i class="fa-solid fa-list"></i></h3></label>
+                    <select name="opciones" id="opcionBusqueda">
+                        <option value="https://pokeapi.co/api/v2/pokemon/">Todos</option>
+                        <option value="uno">Pokemon</option>
+                    </select>
+                    <button type="button" id="BotonSeleccion" class="botonStylo"><i class="fa-solid fa-magnifying-glass" onclick="traerUrl()"></i>Buscar</button>
+                </div>
+                <div class="Botonmain">
+                    <button type="button" id="Boton-inicio" class="botonStylo"><i class="fa-solid fa-house" onclick="limpiar()"></i>Inicio</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenes parrilla" id="imagenes">
+            
+        </div>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/8912ba5f29.js" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+</body>
+</html>
